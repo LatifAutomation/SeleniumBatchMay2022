@@ -1,0 +1,103 @@
+Locators:
+
+
+1. Tagname
+
+2. ID
+
+3. Name
+ 
+4. ClassName
+
+5. LinkTExt
+
+6. Partial LinkText
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+7. CSS selector
+
+
+
+expression
+
+
+By.CSSSelector("By attribute")
+
+
+tagname[attribute name='Attribute value']
+
+
+input[id='A']
+
+
+
+ID
+
+Class
+
+Attributes
+
+
+<input type="text" class="inputtext _55r1 _6luy" name="email" id="email" data-testid="royal_email" placeholder="Email address or phone number" autofocus="1" aria-label="Email address or phone number">
+
+
+
+CSS selector (By using Id):  tagname#id_value
+
+Css Selector (By using class): tagname.class_value
+
+
+Pattern matching--substring
+
+
+
+input[placeholder*='or']--------> sub string/ Pattern match
+
+input[placeholder$='end string']----> suffix ending character
+
+
+input[name^='em']----> Prefix starting character
+
+
+input[name='email'][id='email']----------> Multiple Attribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
