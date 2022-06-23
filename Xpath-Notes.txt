@@ -1,0 +1,218 @@
+8. Xpath
+
+
+By.Xpath("Expression")
+
+
+
+
+ //html tagname[@attribute_name='attribute value']  <-------------- xpath by attribute
+
+
+
+
+// ----------> relative xpath
+
+
+@----> current node
+
+
+
+
+
+Xpath
+
+
+
+1. Absolute xpath
+
+
+
+  Navigating from root of the parent to the child.
+
+  "/"
+
+
+html/body/div[1]/input[1]
+
+
+html/body/div[1]/input[2]
+
+
+html/body/div[2]/a[1]
+
+html/body/div[3]/a[2]
+
+
+
+
+
+
+2. Relative xpath:
+
+
+No need to navigate from the root of the parent i.e directly navigate from the target child
+
+"//"
+
+
+//div[1]/input[1]
+
+
+//div[2]/a[2]
+
+//div[3]/input[1]
+
+//div[3]/input[1]
+
+
+
+3. Xpath By Attribute
+
+
+//html tagname[@attribute_name='attribute_value']
+
+//input[@id='fname']
+
+
+4. Xpath by contains:
+
+
+ //html tagname[contains(@attribute_name,"attribute_value")]
+
+  Login
+
+
+ _42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy    _42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy   _42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy    ---------> class
+
+ u_0_d_jL     u_0_d_IG      u_0_d_JT                                  --------------------> id
+
+
+ class= "123456789"
+
+
+
+contains[@class,"\567\"]
+
+
+
+5. xpath by text:
+
+
+
+//html tagname[text()='text of the element']
+
+
+
+6.Xpath by using AND
+
+
+
+
+ P     Q      p AND Q
+
+
+ T     T       T
+
+
+ T     F       F
+
+
+ F     T       F
+
+
+ F     F       F
+
+
+
+//html tagname[@attribute1='value1' and @attribute2=value2]
+
+//input[@id='twotabsearchtextbox' and @aria-label='Search']
+
+
+
+7.Xpath by using OR
+
+
+
+
+ P     Q      p OR Q
+
+
+ T     T       T
+
+
+ T     F       T
+
+
+ F     T       T
+
+
+ F     F       F
+
+
+//html tagname[@attribute1='value1' or @attribute2=value2]
+
+//input[@id='twotabsearchtextboxbj' or @aria-label='Searnkcnbjjch' or @dir='auto' ]
+
+
+
+8.Xpath by Starts-with
+
+
+//html tagname[starts-with(@attribute_name,"attribute_value")]
+
+
+//input[starts-with(@placeholder,'Email')]
+
+
+9.Xpath by using Index
+
+
+//form[@class='form reg-custom']//input[2]
+
+
+XPath group index	Matching element
+
+//input                 Manual Automation Selenium Testing	     
+(//input)[1]	        Manual 
+(//input)[2]	        Automation 
+(//input)[3]	        Selenium 
+(//input)[4]	        Testing	     
+
+
+
+10.Xpath by using Axes
+
+
+//child::tagname
+
+
+
+11. Xpath By Using parent axes
+
+//parent::tagname
+
+//input[@id='text']//parent::span
+
+
+
+12. Ancestor Axis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
