@@ -1,0 +1,18 @@
+findElements 
+
+
+
+findelement()                              findElements()
+
+
+Identify the single element uniquely.      Identify the multiple elements.
+
+Return type is ----> WebElement            List<webElements>
+
+NoSuchElementException                     No Error  size=0, index
+
+
+
+isDisplayed()-->visible 
+isSelected()-->selectable
+isEnabled()---->enabled 
