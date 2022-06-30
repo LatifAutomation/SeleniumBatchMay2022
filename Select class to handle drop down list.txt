@@ -1,0 +1,48 @@
+
+Handling the Drop down list By using SELECT class
+
+
+
+
+
+Steps to handle drop down by using select class
+
+
+1. Identify the list by usning any locator and store it in one variable.
+
+
+2. Create a object of select class and pass that variable to it from step1.
+
+
+
+    Select sel=new Select(variable)
+
+
+3.  Perform the action by using any non static methods which is present in select.
+
+
+
+
+1. selectByIndex(int arg)
+
+2. selectByValue(String arg)
+
+3. SeelctByVisibleText(String)
+
+4. isMultiple()
+
+5. DeselectByIndex(int arg)
+
+6. DeselectByValue(String arg)
+
+7. DeSeelctByVisibleText(String)
+
+9. DeselectAll()
+
+10.getoptions()
+
+11.getAllSelectedOptions()
+
+12.getFirstSelectedoption()
+
+
