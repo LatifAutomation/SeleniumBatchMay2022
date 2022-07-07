@@ -1,0 +1,60 @@
+Actions class in Selenium
+
+
+1. KeyBoard Action
+
+2. Mouse Action
+
+
+Webdriver driver=new Chromedriver();
+
+
+
+Steps to use Actions class
+
+
+1. Identify the webelement on which we need to perform the action and store in one    variable.
+
+2. Create a object of Actions class
+
+
+ Actions act=new Actions(driver);
+
+
+3. Perform the action with the help of methods present in actions class.
+
+
+
+
+  1. sendKeys():
+
+
+  2. Perform: single action
+
+  3. click();
+
+  4. doubleClick():
+
+  5. movetoElement():
+
+  6. DragAndDrop():
+
+  7. ClickAndhold():
+
+  8. Release(): 
+ 
+  9. build():
+
+  10.moveByOffset():
+
+
+  11.KeyDown(): Key Press
+
+  12.KeyUp(): Release key
+  
+  13.pause():
+
+
+
+drag and drop url: https://the-internet.herokuapp.com/drag_and_drop
+
