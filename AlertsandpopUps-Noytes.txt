@@ -1,0 +1,95 @@
+Alerts and Popup in Selenium
+
+
+1. Hidden Division Popup
+
+   1.We can inspect.
+   
+   2.It is colorfull.
+
+   3.We cant drag and drop
+
+
+2. Authentication popup/ Login popup
+
+  1. Username and popword
+
+  2. We cant inspect.
+  
+  3. It is colorful.
+
+  4. We cant drag and drop.
+
+
+we need to pass username and password to url.
+
+
+https://www.xyz.com
+
+https://username:password@www.xyz.com
+
+
+https://the-internet.herokuapp.com/basic_auth
+
+
+
+username: admin
+
+Password: admin
+
+
+https://admin:admin@the-internet.herokuapp.com/basic_auth.
+
+
+3.Alert popup/Confirmation popup
+
+
+1. We cant inspect
+
+2. It is colorfull.
+
+3. We cant drag and drop.
+
+4. It always consist OK and Cancel.
+
+
+Alert---------> Class
+
+
+OK-------->accept()
+Cancel---> dismiss()
+getText()--->Text of Alert
+
+switchTo()--->
+
+
+4.Windows Based popup
+
+1. We can inspect.
+
+2. It is colorfull.
+
+3. We can drag and drop
+
+4. It will consist minimize, maximize and close option.
+
+
+Reference ID
+
+
+
+getWindowHandle(): It will return reference Id of parent window.
+
+
+getWindowHandles():It will return reference Id of parent and child windows
+
+
+switchTo().window()
+
+
+Quit(): closes all the windows(parent and  child windows)
+
+
+
+
+
