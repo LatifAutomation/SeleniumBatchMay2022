@@ -1,38 +1,43 @@
-package PageObjectModel;
+package PageFactory;
 
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class BrowserStack_SignUpPage 
 {
    
-	//Declaration
-	
+	@FindBy(xpath="//h1[@class='heading']")
 	private WebElement header;
+	
+	@FindBy(id="user_full_name")
 	private WebElement fname;
+	
+	@FindBy(id="user_email_login")
 	private WebElement bemail;
+
+	@FindBy(id="user_password")
 	private WebElement pwd;
+	
+	@FindBy(name="terms_and_conditions")
 	private WebElement chekbx;
+	
+	@FindBy(id="user_submit")
 	private WebElement signmeup;
+	
+	@FindBy(xpath="//a[@class='minitext terms-url']")
 	private WebElement termc;
 	
 	
-	//Initialization
 	
-	public BrowserStack_SignUpPage(WebDriver driver)
+	public BrowserStack_SignUpPage(WebDriver drbncjnbfjniver)
 	{
-		header=driver.findElement(By.xpath("//h1[@class='heading']"));
-		fname=driver.findElement(By.id("user_full_name"));
-		bemail=driver.findElement(By.id("user_email_login"));
-		pwd=driver.findElement(By.id("user_password"));
-		chekbx=driver.findElement(By.name("terms_and_conditions"));
-		signmeup=driver.findElement(By.id("user_submit"));
-		termc=driver.findElement(By.xpath("//a[@class='minitext terms-url']"));
+		PageFactory.initElements(drbncjnbfjniver, this);
 	}
-	
 	
 	
 	//Utilization
